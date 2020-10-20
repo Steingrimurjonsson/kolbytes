@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kolbytes</title>
+  <meta name="keywords" content="[Kolbytes], [Kolbytes], Software" />
+  <meta name="description" content="[Kolbytes] | Software" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      color: white;
+      height: 100%;
+
+    }
+
+    p {
+      color: white !important;
+    }
+
+    .projecth1 {
+      position: relative;
+      left: 5%;
+      top: 10%;
+      box-sizing: border-box;
+      text-decoration: none;
+      font: normal 400 35px/1 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      color: #FFFFFF;
+      text-align: left;
+      transition: all 0.2s;
+    }
+
+    .goth1 {
+      position: relative;
+      left: 160px;
+      top: 65px;
+      box-sizing: border-box;
+      text-decoration: none;
+      font: normal 400 35px/1 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      color: #FFFFFF;
+      text-align: left;
+      transition: all 0.2s;
+    }
+
+    .contact {
+      position: relative;
+      left: 5%;
+      top: 10%;
+      box-sizing: border-box;
+      text-decoration: none;
+      font: normal 400 35px/1 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      color: #FFFFFF;
+      text-align: left;
+      transition: all 0.2s;
+    }
+
+    h2 {
+      position: relative;
+      top: 10%;
+      box-sizing: border-box;
+      text-decoration: none;
+      font: normal 400 35px/1 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      color: #FFFFFF;
+      text-align: left;
+      transition: all 0.2s;
+    }
+
+    section {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: hidden;
+
+    }
+
+    #section02,
+    #section03,
+    #section03,
+    #section04,
+    #section05,
+    #section06 {
+      background-color: #0C0C0C;
+    }
+
+    .gotImg {
+      position: absolute;
+      height: 120px;
+      width: 120px;
+      left: 20px;
+      top: 20px;
+
+    }
+
+
+    .footerMain {
+      top: 85%;
+      position: absolute;
+      left: 5%;
+      z-index: 2;
+      display: inline-block;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: #fff !important;
+      font: normal 400 20px/1 'Josefin Sans', sans-serif;
+      letter-spacing: .1em;
+      text-decoration: none;
+      transition: opacity .3s;
+    }
+
+    .copyrights {
+      position: absolute;
+      bottom: 20px;
+      left: 65%;
+      z-index: 2;
+      display: inline-block;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: #fff;
+      font: normal 400 20px/1 'Josefin Sans', sans-serif;
+      letter-spacing: .1em;
+      text-decoration: none;
+      transition: opacity .3s;
+
+    }
+
+    .goToB {
+      position: absolute;
+      bottom: 20px;
+      left: 5%;
+      z-index: 2;
+      display: inline-block;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: #fff;
+      font: normal 400 20px/1 'Josefin Sans', sans-serif;
+      letter-spacing: .1em;
+      text-decoration: none;
+      transition: opacity .3s;
+      padding: 5px;
+      border: 0.1em solid #FFFFFF;
+      border-radius: 0.12em;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    .goToB:hover {
+      opacity: .5;
+      color: #000000;
+      background-color: #FFFFFF;
+    }
+
+
+    .scrollBut {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      z-index: 2;
+      display: inline-block;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: #fff;
+      font: normal 400 20px/1 'Josefin Sans', sans-serif;
+      letter-spacing: .1em;
+      text-decoration: none;
+      transition: opacity .3s;
+    }
+
+    .demo .scrollBut:hover {
+      opacity: .5;
+    }
+
+    .scrollBut {
+      padding-top: 60px;
+    }
+
+    a span {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 30px;
+      height: 50px;
+      margin-left: -15px;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      box-sizing: border-box;
+    }
+
+    a span::before {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      content: '';
+      width: 6px;
+      height: 6px;
+      margin-left: -3px;
+      background-color: #fff;
+      border-radius: 100%;
+      -webkit-animation: sdb01 2s infinite;
+      animation: sdb01 2s infinite;
+      box-sizing: border-box;
+    }
+
+    @-webkit-keyframes sdb01 {
+      0% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0;
+      }
+
+      40% {
+        opacity: 1;
+      }
+
+      80% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes sdb01 {
+      0% {
+        transform: translate(0, 0);
+        opacity: 0;
+      }
+
+      40% {
+        opacity: 1;
+      }
+
+      80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .menuBarCon {
+      position: fixed;
+      top: 15px;
+      right: 10px;
+      z-index: 9999;
+
+    }
+
+    .dropdown {
+      position: fixed;
+      top: 15px;
+      right: 161px;
+      z-index: 9999;
+      height: 40px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 29px;
+      border: none;
+    }
+
+    .dropdown-content a {
+      text-decoration: none;
+      display: block;
+      border: none;
+    }
+
+    .dropdown-content a:hover {}
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {}
+
+    .aboutTextCon {
+      width: 50%;
+      height: 50px;
+      position: fixed;
+      bottom: 130px;
+      left: 100px;
+    }
+
+    .aboutText {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      word-wrap: break-word;
+      font: normal 400 14px/1 'Roboto', sans-serif;
+
+    }
+
+
+    .aboutTextM {
+      display: none;
+
+    }
+
+    .contactButCon {
+      width: auto;
+      height: auto;
+      position: fixed;
+      bottom: 80px;
+      left: 100px;
+    }
+
+    .but {
+      position: relative;
+      padding: 5px;
+      border: 0.1em solid #FFFFFF;
+      border-radius: 0.12em;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #FFFFFF;
+      text-align: left;
+      transition: all 0.2s;
+    }
+
+    .but:hover {
+      color: #000000;
+      background-color: #FFFFFF;
+    }
+
+
+
+
+    /* Use a media query to add a break point at 800px: */
+
+    iframe {
+      -ms-transform: scale(0.40);
+      -moz-transform: scale(0.40);
+      -o-transform: scale(0.40);
+      -webkit-transform: scale(0.40);
+      transform: scale(0.40);
+      position: relative;
+      top: -255px;
+      left: -432px;
+      height: 850px;
+      width: 1435px;
+    }
+
+    #wrapper {
+      overflow: hidden;
+      position: relative;
+
+
+    }
+
+    canvas {
+      position: absolute;
+      z-index: -1;
+      overflow: hidden;
+      width: 100% !important;
+    }
+
+
+
+    /* input field styles */
+
+    .contactForm {
+      padding: 0px 15px 0px 15px;
+      position: relative;
+      width: 70%;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: #fff;
+      font: normal 400 16px/1 'Josefin Sans', sans-serif;
+      letter-spacing: .1em;
+      text-decoration: none;
+      transition: opacity .3s;
+      left: 25%;
+      top: 12%;
+    }
+
+
+    .form-control {
+
+      width: 70%;
+      max-width: 70%;
+      height: 3em;
+      padding: 1em;
+      margin: .5em 0 2em 0;
+
+      position: relative;
+      padding: 5px;
+      border: 0.1em solid #FFFFFF;
+      border-radius: 0.12em;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #FFFFFF;
+      text-align: left;
+      transition: all 0.2s;
+    }
+
+    textarea {
+      min-height: 10em;
+    }
+
+    label {
+      display: inline-block;
+      max-width: 100%;
+      margin-bottom: 5px;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    #submit {
+      outline: none;
+      padding: 12px;
+      min-width: 200px;
+      border-radius: 2px;
+      border: 2px solid #FF6363;
+      text-align: center;
+      font-size: 1em;
+      color: #FF6363;
+      background-color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    #submit:hover {
+      background-color: #FF6363;
+      color: white;
+      -webkit-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+
+    .active {
+      color: black;
+      background-color: white;
+    }
+
+
+    .manivestTextCon {
+      width: 40%;
+      height: 50px;
+      position: absolute;
+      left: 5%;
+      bottom: 65%;
+    }
+
+    .manivestText {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      word-wrap: break-word;
+      line-height: 1.6 !important;
+
+      color: #fff;
+      font: normal 400 14px/1 'Roboto', sans-serif;
+
+    }
+
+    .manivestTextM {
+      display: none;
+
+    }
+    .gotTextCon {
+      width: 40%;
+      height: 50px;
+      position: absolute;
+      left: 5%;
+      bottom: 65%;
+    }
+
+    .gotText {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      word-wrap: break-word;
+      line-height: 1.6 !important;
+
+      color: #fff;
+      font: normal 400 14px/1 'Roboto', sans-serif;
+
+    }
+
+    .gotTextM {
+      display: none;
+
+    }
+
+    .maniWrap {
+      padding-top: 10% !important;
+      height: auto !important;
+    }
+
+    .macWrap {
+      width: 900px;
+      position: relative;
+      left: 50% !important;
+    }
+
+    .macbook {
+
+      width: 837px;
+      -webkit-perspective: 1470;
+      -webkit-perspective-origin: 50% bottom;
+      -webkit-transform-style: preserve-3d;
+      -moz-perspective: 1000px;
+      -moz-perspective-origin: 50% bottom;
+      -moz-transform-style: preserve-3d;
+      perspective: 1000;
+      perspective-origin: 50% bottom;
+      transform-style: preserve-3d;
+    }
+
+    .macbook-lid {
+      width: 72.8%;
+      margin: 0 auto;
+      -webkit-transform-origin: 50% bottom;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-origin: 50% bottom;
+      -moz-transform-style: preserve-3d;
+      transform-origin: 50% bottom;
+      transform-style: preserve-3d;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      transition: all 1s;
+    }
+
+    .macbook-lid:before {
+      display: block;
+      content: '';
+      width: 92%;
+      margin: 0 auto;
+      padding: 2% 3% 0 3%;
+      background-color: #4e4e4e;
+      border-radius: 10px 10px 0 0;
+      -webkit-transform-origin: 50% bottom;
+      -webkit-transform: rotate3d(1, 0, 0, 90deg);
+      -moz-transform-origin: 50% bottom;
+      -moz-transform: rotate3d(1, 0, 0, 90deg);
+      transform-origin: 50% bottom;
+      transform: rotate3d(1, 0, 0, 90deg);
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      transition: all 1s;
+    }
+
+    .macbook-screen {
+      position: relative;
+      background-color: #353535;
+      margin: 0 auto;
+      padding: 3%;
+      border-radius: 5px 5px 0 0;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      transition: all 1s;
+    }
+
+    .macbook-screen:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 2%;
+      left: 49%;
+      width: 1%;
+      padding-top: 1%;
+      background-color: #000;
+    }
+
+    .macbook-content {
+      position: relative;
+      overflow: hidden;
+      background-color: #1C1C1C;
+      box-shadow: inset 0px 0px 6px #222;
+      max-height: 360px;
+    }
+
+    .macbook-content:before {
+      display: block;
+      content: '';
+      width: 1px;
+      padding-top: 60%;
+      float: left;
+    }
+
+    .macbook-content:after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+
+    #section02:not(:hover) .macbook-lid {
+      -webkit-transform: rotate3d(-1, 0, 0, 91deg);
+      -moz-transform: rotate3d(-1, 0, 0, 91deg);
+      transform: rotate3d(-1, 0, 0, 91deg);
+    }
+
+    #section02:not(:hover) .macbook-lid:before {
+      width: 94%;
+    }
+
+    .macbook-base {
+      width: 100%;
+      overflow: hidden;
+      background-color: #4e4e4e;
+      border-radius: 2px 2px 10px 10px;
+    }
+
+    .macbook-base:before {
+      display: block;
+      content: '';
+      width: 30%;
+      margin: 0 auto 1% auto;
+      padding-top: 1.5%;
+      background: #696969;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .macbook-base:after {
+      display: block;
+      content: '';
+      padding-top: 1%;
+      background-color: #696969;
+    }
+
+
+
+    @media screen and (max-width:1500px) {
+
+      .left,
+      .right {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+
+      .macWrap {
+
+        width: 900px;
+        position: relative;
+        left: 5% !important;
+      }
+
+      .manivestTextCon {
+        width: 90%;
+        height: 50px;
+        position: absolute;
+        left: 5%;
+        bottom: 25%;
+      }
+
+      .manivestText {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        word-wrap: break-word;
+        line-height: 1.6 !important;
+        color: #fff;
+        font: normal 400 14px/1 'Roboto', sans-serif;
+        padding-bottom: 30px;
+      }
+
+      .scrollBut {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        height: 10px;
+      }
+    }
+
+    @media screen and (max-width:1200px) {
+
+      .left,
+      .right {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+
+      .manivestTextCon {
+        width: 90%;
+        height: 50px;
+        position: absolute;
+        left: 5%;
+        bottom: 28%;
+      }
+
+    }
+
+    /* Use a media query to add a break point at 800px: */
+    @media screen and (max-width:900px) {
+
+      .left,
+      .right {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+
+
+
+      .aboutTextCon {
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 130px;
+        left: 60px;
+        margin-top: 50px;
+      }
+
+      .aboutText {
+        display: none;
+
+      }
+
+      .aboutTextM {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        word-wrap: break-word;
+        color: #fff;
+        display: unset;
+        font: normal 400 14px/1 'Roboto', sans-serif;
+
+      }
+
+      .contactButCon {
+        width: auto;
+        height: auto;
+        position: fixed;
+        bottom: 75px;
+        left: 20px;
+      }
+
+
+      .footerMain {
+        top: 92%;
+        position: absolute;
+        left: 50%;
+        width: 50%;
+        z-index: 2;
+        display: inline-block;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        color: #fff;
+        font: normal 400 12px/1 'Josefin Sans', sans-serif;
+        letter-spacing: .1em;
+        text-decoration: none;
+        transition: opacity .3s;
+      }
+
+      .copyrights {
+        position: absolute;
+        bottom: 1px;
+        width: 100%;
+        left: 5%;
+        z-index: 2;
+        display: inline-block;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        color: #fff;
+        font: normal 400 12px/1 'Josefin Sans', sans-serif;
+        letter-spacing: .1em;
+        text-decoration: none;
+        transition: opacity .3s;
+
+      }
+
+      .goToB {
+        position: absolute;
+        bottom: 50px;
+        left: 5%;
+        z-index: 2;
+        display: inline-block;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        color: #fff;
+        font: normal 400 12px/1 'Josefin Sans', sans-serif;
+        letter-spacing: .1em;
+        text-decoration: none;
+        transition: opacity .3s;
+        padding: 5px;
+        border: 0.1em solid #FFFFFF;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+
+      .form-control {
+        width: 100%;
+        max-width: 100%;
+        height: 3em;
+        padding: 1em;
+        margin: .5em 0 2em 0;
+        padding: 5px;
+        border: 0.1em solid #FFFFFF;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: #FFFFFF;
+        text-align: left;
+        transition: all 0.2s;
+      }
+
+      .contactForm {
+        padding: 0px 15px 0px 15px;
+        position: relative;
+        width: 100%;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        color: #fff;
+        font: normal 400 16px/1 'Josefin Sans', sans-serif;
+        letter-spacing: .1em;
+        text-decoration: none;
+        transition: opacity .3s;
+        left: 0%;
+        top: 20%;
+      }
+
+      .projecth1 {
+        position: relative;
+        left: 5%;
+        top: 3%;
+        box-sizing: border-box;
+        text-decoration: none;
+        font: normal 400 35px/1 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        color: #FFFFFF;
+        text-align: left;
+        transition: all 0.2s;
+      }
+
+      .contact {
+        position: relative;
+        left: 5%;
+        top: 10%;
+        box-sizing: border-box;
+        text-decoration: none;
+        font: normal 400 35px/1 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        color: #FFFFFF;
+        text-align: left;
+        transition: all 0.2s;
+      }
+
+
+
+
+
+      .manivestTextCon {
+        width: 95%;
+        height: 30%;
+        position: absolute;
+        left: 3%;
+        bottom: 20%;
+        padding-top: 10%;
+      }
+
+      .manivestText {
+        display: none;
+      }
+
+      .manivestTextM {
+        display: unset;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        word-wrap: break-word;
+        line-height: 2 !important;
+        color: #fff;
+        font: normal 400 14px/1 'Roboto', sans-serif;
+      }
+
+      iframe {
+        -ms-transform: scale(0.20);
+        -moz-transform: scale(0.20);
+        -o-transform: scale(0.20);
+        -webkit-transform: scale(0.20);
+        transform: scale(0.20);
+        position: relative;
+        top: -340px;
+        left: -580px;
+        height: 850px;
+        width: 1435px;
+      }
+
+      #wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 170px;
+      }
+
+      .maniWrap {
+        top: 50%;
+        height: auto !important;
+      }
+
+      .macWrap {
+        width: auto;
+        position: relative;
+        left: 20% !important;
+        padding-top: 20% !important;
+      }
+
+      .macbook {
+        width: 357px;
+        -webkit-perspective: 1150;
+        -webkit-perspective-origin: 50% bottom;
+        -webkit-transform-style: preserve-3d;
+        -moz-perspective: 1000px;
+        -moz-perspective-origin: 50% bottom;
+        -moz-transform-style: preserve-3d;
+        perspective: 1000;
+        perspective-origin: 50% bottom;
+        transform-style: preserve-3d;
+      }
+
+      .macbook-lid {
+        width: 84%;
+        margin: 0 auto;
+        -webkit-transform-origin: 50% bottom;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-origin: 50% bottom;
+        -moz-transform-style: preserve-3d;
+        transform-origin: 50% bottom;
+        transform-style: preserve-3d;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        transition: all 1s;
+      }
+
+      .macbook-lid:before {
+        display: block;
+        content: '';
+        width: 92%;
+        margin: 0 auto;
+        padding: 2% 3% 0 3%;
+        background-color: #4e4e4e;
+        border-radius: 10px 10px 0 0;
+        -webkit-transform-origin: 50% bottom;
+        -webkit-transform: rotate3d(1, 0, 0, 90deg);
+        -moz-transform-origin: 50% bottom;
+        -moz-transform: rotate3d(1, 0, 0, 90deg);
+        transform-origin: 50% bottom;
+        transform: rotate3d(1, 0, 0, 90deg);
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        transition: all 1s;
+      }
+
+      .macbook-screen {
+        position: relative;
+        background-color: #353535;
+        margin: 0 auto;
+        padding: 3%;
+        border-radius: 5px 5px 0 0;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        transition: all 1s;
+      }
+
+      .macbook-screen:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 2%;
+        left: 49%;
+        width: 1%;
+        padding-top: 1%;
+        background-color: #000;
+      }
+
+      .macbook-content {
+        position: relative;
+        overflow: hidden;
+        background-color: #1C1C1C;
+        box-shadow: inset 0px 0px 6px #222;
+        max-height: 360px;
+      }
+
+      .macbook-content:before {
+        display: block;
+        content: '';
+        width: 1px;
+        padding-top: 60%;
+        float: left;
+      }
+
+      .macbook-content:after {
+        display: block;
+        content: '';
+        clear: both;
+      }
+
+      #section02:not(:hover) .macbook-lid {
+        -webkit-transform: rotate3d(-1, 0, 0, 91deg);
+        -moz-transform: rotate3d(-1, 0, 0, 91deg);
+        transform: rotate3d(-1, 0, 0, 91deg);
+      }
+
+      #section02:not(:hover) .macbook-lid:before {
+        width: 94%;
+      }
+
+      .macbook-base {
+        width: 100%;
+        overflow: hidden;
+        background-color: #4e4e4e;
+        border-radius: 2px 2px 10px 10px;
+      }
+
+      .macbook-base:before {
+        display: block;
+        content: '';
+        width: 30%;
+        margin: 0 auto 1% auto;
+        padding-top: 1.5%;
+        background: #696969;
+        border-radius: 0 0 10px 10px;
+      }
+
+      .macbook-base:after {
+        display: block;
+        content: '';
+        padding-top: 1%;
+        background-color: #696969;
+      }
+
+
+
+    }
+
+    @media screen and (max-width:560px) {
+
+      .left,
+      .right {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+
+      iframe {
+        -ms-transform: scale(0.20);
+        -moz-transform: scale(0.20);
+        -o-transform: scale(0.20);
+        -webkit-transform: scale(0.20);
+        transform: scale(0.20);
+        position: relative;
+        top: -340px;
+        left: -580px;
+        height: 850px;
+        width: 1435px;
+      }
+
+      #wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 170px;
+      }
+
+      .maniWrap {
+        top: 50%;
+        height: auto !important;
+      }
+
+      .macbook {
+        width: 95%;
+        margin: 50px auto;
+        -webkit-perspective: 1170;
+        -webkit-perspective-origin: 50% bottom;
+        -webkit-transform-style: preserve-3d;
+        -moz-perspective: 1000px;
+        -moz-perspective-origin: 50% bottom;
+        -moz-transform-style: preserve-3d;
+        perspective: 1000;
+        perspective-origin: 50% bottom;
+        transform-style: preserve-3d;
+      }
+
+      .macbook-lid {
+        width: 84%;
+        margin: 0 auto;
+        -webkit-transform-origin: 50% bottom;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-origin: 50% bottom;
+        -moz-transform-style: preserve-3d;
+        transform-origin: 50% bottom;
+        transform-style: preserve-3d;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        transition: all 1s;
+      }
+
+      .macbook-lid:before {
+        display: block;
+        content: '';
+        width: 92%;
+        margin: 0 auto;
+        padding: 2% 3% 0 3%;
+        background-color: #4e4e4e;
+        border-radius: 10px 10px 0 0;
+        -webkit-transform-origin: 50% bottom;
+        -webkit-transform: rotate3d(1, 0, 0, 90deg);
+        -moz-transform-origin: 50% bottom;
+        -moz-transform: rotate3d(1, 0, 0, 90deg);
+        transform-origin: 50% bottom;
+        transform: rotate3d(1, 0, 0, 90deg);
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        transition: all 1s;
+      }
+
+      .macbook-screen {
+        position: relative;
+        background-color: #353535;
+        margin: 0 auto;
+        padding: 3%;
+        border-radius: 5px 5px 0 0;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        transition: all 1s;
+      }
+
+      .macbook-screen:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 2%;
+        left: 49%;
+        width: 1%;
+        padding-top: 1%;
+        background-color: #000;
+      }
+
+      .macbook-content {
+        position: relative;
+        overflow: hidden;
+        background-color: #1C1C1C;
+        box-shadow: inset 0px 0px 6px #222;
+        max-height: 360px;
+      }
+
+      .macbook-content:before {
+        display: block;
+        content: '';
+        width: 1px;
+        padding-top: 60%;
+        float: left;
+      }
+
+      .macbook-content:after {
+        display: block;
+        content: '';
+        clear: both;
+      }
+
+      #section02:not(:hover) .macbook-lid {
+        -webkit-transform: rotate3d(-1, 0, 0, 91deg);
+        -moz-transform: rotate3d(-1, 0, 0, 91deg);
+        transform: rotate3d(-1, 0, 0, 91deg);
+      }
+
+      #section02:not(:hover) .macbook-lid:before {
+        width: 94%;
+      }
+
+      .macbook-base {
+        width: 100%;
+        overflow: hidden;
+        background-color: #4e4e4e;
+        border-radius: 2px 2px 10px 10px;
+      }
+
+      .macbook-base:before {
+        display: block;
+        content: '';
+        width: 30%;
+        margin: 0 auto 1% auto;
+        padding-top: 1.5%;
+        background: #696969;
+        border-radius: 0 0 10px 10px;
+      }
+
+      .macbook-base:after {
+        display: block;
+        content: '';
+        padding-top: 1%;
+        background-color: #696969;
+      }
+
+      .macWrap {
+
+        display: unset !important;
+      }
+
+    }
+
+    .logoCon img {
+      position: absolute;
+      right: 300px;
+      top: 25px;
+      z-index: 99999;
+    }
+
+    @media screen and (max-width:1400px) {
+
+      .left,
+      .right {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+
+      .wrapper {
+        transform: scale(0.7) !important;
+      }
+
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/scrollScript.js"></script>
+
+  <style>
+    .wrapper {
+      display: flex;
+      padding-top: 150px;
+    }
+
+    .card {
+      display: inline-block;
+      flex: 1;
+      /*grow*/
+
+      top: 25%;
+      margin: 20px;
+      width: 350px;
+      background-color: #fff;
+      border-radius: 15px;
+      border: 5px solid white;
+
+      box-shadow: 0 30 50 rgba(0, 0, 0, 0.2);
+
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+
+    .card--19 {}
+
+    .card--solstice {}
+
+    .card--huarache {}
+
+    .card--ap {}
+
+    .card__header {
+      position: relative;
+      height: 170px;
+      padding: 30px 30px 300px;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      color: #fff;
+    }
+
+    .card__header--19 {
+      background-color: #0D0D11;
+      background-image: linear-gradient(#0D0D11, #121217);
+
+      background: #0D0D11;
+      background: linear-gradient(#0D0D11, #121217);
+    }
+
+    .card__header--solstice {
+
+      background-color: #005066;
+      background-image: linear-gradient(#005066, #5500dd);
+
+      background: #005066;
+      background: linear-gradient(#005066, #5500dd);
+    }
+
+    .card__header--huarache {
+      background-color: #005066;
+      background-image: linear-gradient(#003442, #3e73c2);
+
+      background: #005066;
+      background: linear-gradient(#003442, #3e73c2);
+    }
+
+    .card__header--ap {
+      background-color: #ffffff;
+      background-image: linear-gradient(#ffffff, #ff4040);
+
+      background: #ffffff;
+      background: linear-gradient(#ffffff, #ff4040);
+    }
+
+    .card__watermark {
+      overflow: hidden;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+    }
+
+    .card__watermark::after {
+      content: attr(data-watermark);
+      position: relative;
+      left: -20px;
+      color: rgba(0, 0, 0, .3);
+      font-size: 240px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .card__logo {
+      width: 50px;
+    }
+
+    .card__price {
+      float: right;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    .card__title {
+      text-decoration: none;
+      font: normal 400 35px/1 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      color: #FFFFFF;
+      text-align: left;
+      transition: all 0.2s;
+
+      margin: 90px 0 20px;
+      font-size: 15px;
+      line-height: 1.1em;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .card__subtitle {
+      text-decoration: none;
+      font: normal 400 35px/1 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      color: #FFFFFF;
+      text-align: left;
+      transition: all 0.2s;
+
+      display: block;
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    .card__body {
+      position: relative;
+      padding: 40px 30px 20px;
+    }
+
+    .card__image {
+      z-index: 1;
+      position: absolute;
+      top: 250px;
+      left: 30px;
+      width: 100%;
+
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+
+    .card__wish-list {
+      display: block;
+      width: 60%;
+      margin: 0 auto 15px;
+      padding: 15px;
+      border: 2px solid #000000;
+      border-radius: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 145px;
+      color: #000000;
+      text-decoration: none;
+      font: normal 400 15px/1 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      text-align: left;
+      transition: all 0.2s;
+    }
+
+
+    .card__category {
+      display: block;
+      font-size: 12px;
+      color: #AEAEAE;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .card__will-animate {}
+
+    .cards-placeholder {
+      display: block;
+      position: relative;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .cards-placeholder__item {
+      opacity: 0.3;
+      display: inline-block;
+      margin-right: 10px;
+      background-color: #fff;
+      width: 30px;
+      height: 5px;
+      border-radius: 5px;
+
+      transition: opacity 0.2s;
+      will-change: opacity;
+    }
+
+    .cards-placeholder__item--active {
+      opacity: 1;
+    }
+  </style>
+  <script>
+
+    //ajax form
+    $(function () {
+
+      // Get the form.
+      var form = $('#ajax-contact');
+
+      // Get the messages div.
+      var formMessages = $('#form-messages');
+
+      // Set up an event listener for the contact form.
+      $(form).submit(function (e) {
+        // Stop the browser from submitting the form.
+        e.preventDefault();
+
+        // Serialize the form data.
+        var formData = $(form).serialize();
+
+        // Submit the form using AJAX.
+        $.ajax({
+          type: 'POST',
+          url: $(form).attr('action'),
+          data: formData
+        })
+          .done(function (response) {
+            // Make sure that the formMessages div has the 'success' class.
+            $(formMessages).removeClass('error');
+            $(formMessages).addClass('success');
+
+            // Set the message text.
+            $(formMessages).text(response);
+
+            // Clear the form.
+            $('#name').val('');
+            $('#email').val('');
+            $('#message').val('');
+          })
+          .fail(function (data) {
+            // Make sure that the formMessages div has the 'error' class.
+            $(formMessages).removeClass('success');
+            $(formMessages).addClass('error');
+
+            // Set the message text.
+            if (data.responseText !== '') {
+              $(formMessages).text(data.responseText);
+            } else {
+              $(formMessages).text('Oops! An error occured and your message could not be sent.');
+            }
+          });
+
+      });
+
+    });
+  </script>
+
+
+</head>
+
+<body>
+  <section id="section01" class="demo">
+    <div id="WebGL-output">
+      <div class="menuBarCon">
+
+        <div class="dropdown">
+          <a class="but" href="#section02">projects</a>
+
+          <div class="dropdown-content">
+            <a class="but" href="#section02">Manivest</a>
+            <a class="but" href="#section05">GlassOrTwo</a>
+          </div>
+        </div>
+        <a class="but" href="#section04">customers</a>
+        <a class="but" href="#section05">about</a>
+
+
+
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1000" class="aboutTextCon">
+        <p class="aboutText">We create full-stack development solutions with a passion for creative designs and
+          high-quality software. We strive to hold the highest standards, supported by our 4 years of
+          experience developing software for the financial industry. We hope to help you reach your goals and
+          look forward to hearing about your ideas.</p>
+        <p class="aboutTextM">Full-Stack solutions with unique designs</p>
+      </div>
+      <div class="contactButCon">
+        <a class="but" href="#section05">contact us</a>
+      </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/90/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.90.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="js/script.js"></script>
+    <a class="scrollBut" href="#section02"><span></span></a>
+  </section>
+  <section id="section02" class="demo">
+    <h1 class="projecth1">projects</h1>
+
+    <div class="maniWrap">
+      <div class="macWrap">
+        <div class="macbook">
+          <div class="macbook-lid">
+            <div class="macbook-screen">
+              <div class="macbook-content">
+                <div class="projectsDiv">
+                  <div id="wrapper">
+                    <iframe src="/maniFrontDemo.html" frameborder="0"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="macbook-base"></div>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1000" class="manivestTextCon">
+        <h2>Manivest Value Fund</h2>
+        <br>
+        <p class="manivestText">Manivest is an AI-Powered Alternative Investment Fund investing in global equities based
+          on a rigorous and rule-based investment strategy.
+          Utilizing advanced Machine Learning, our investment software calculates in real-time the optimal time for
+          buying
+          or selling an asset.
+          When an asset is selected for trading, the trading is to 90% autonomous, and the strategy applied is a Machine
+          Learning based Swing-Trading. <br><br>
+          I worked on the Manivest platform for a couple of years, during my time living in Texas and Antigua.
+          This was my first experience working with a large project and this gave me a lot of overviewing capabilities
+          to manage and create large scale applications.
+          My responsibillies at Manivest included everything from Market screening as Junior Analyst,
+          to coding and designing UI/UX as well as the backend. </p>
+        <p class="manivestTextM">Manivest is an AI-Powered Alternative Investment Fund investing in global equities
+          based
+          on a rigorous and rule-based investment strategy.
+          Kolbytes helped develop and design UI/UX and the backend. </p>
+
+      </div>
+      <a class="scrollBut" href="#section03"><span></span></a>
+    </div>
+
+  </section>
+
+  <section id="section03" class="demo">
+    <div data-aos="fade-right" data-aos-duration="1000">
+      <h1 class="goth1">GlassOrTwo</h1>
+      <img class="gotImg" src="js/got120120.png">
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000" class="gotTextCon">
+      <h2>Minimize Wine Waste <br>& Open The Bottles You Never Would</h2>
+      <br>
+      <p class="gotText">GlassOrTwo is a mobile application we are developing.
+        The application will allow users to find wine deals from restaurants around their area.
+        It will also create a possibility for restaurants to open and sell special and expensive bottles, per glass.
+        The restaurants will be able to send a deal out and the price of the deal will follow the time left of the life
+        span on the opened bottle.
+        The application is made with Flutter and is still under construction.<br> The app showcased here is only a
+        responsive visualization of the actual app. </p>
+      <p class="gotTextM">Manivest is an AI-Powered Alternative Investment Fund investing in global equities
+        based
+        on a rigorous and rule-based investment strategy.
+        Kolbytes helped develop and design UI/UX and the backend. </p>
+
+    </div>
+    </div>
+    <div data-aos="fade-left" data-aos-duration="1000" class="container">
+      <img src="js/res4.jpg" alt="" class="image">
+      <button class="icon -back">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <!-- Header -->
+      <div class="header">
+
+        <button class="icon -plus">
+          <img height="40px" width="40px" src="js/got120120.png">
+        </button>
+        <h5 style="color: black; font-size: 16px; padding-left: 55px;padding-top: 10px;" class="title">GlassOrTwo</h5>
+        <div class="burgerMenu">
+          <button class="icon -plus">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!--     Search -->
+        <label for="" class="search">
+          <i class="fas fa-search"></i>
+          <input type="text" value="" placeholder="Search for wine" class="input">
+        </label>
+      </div>
+
+
+      <!-- Grid -->
+      <div class="grid-card">
+        <figure class="grid">
+          <img src="js/res1.jpg" alt="" class="image">
+          <figcaption class="caption">
+            <h3 class="title">Gusteau's</h3>
+            <div class="cardInfo">
+              <h5 class="">Casa Marin Pinot Noir 2011</h5>
+              <h5 class="">3 Km</h5>
+              <h5 class="">50 DKK &emsp; 🕒 45 min</h5>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="grid-card">
+        <figure class="grid">
+          <img src="js/res2.jpg" alt="" class="image">
+          <figcaption class="caption">
+            <h3 class="title">Dorsia</h3>
+            <div class="cardInfo">
+              <h5>Buglioni Amarone Jeroboam 95p</h5>
+              <h5>6 Km</h5>
+              <h5>150 DKK &emsp; 🕒 32 min</h5>
+
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="grid-card">
+        <figure class="grid">
+          <img src="js/res3.jpg" alt="" class="image">
+          <figcaption class="caption">
+            <h3 class="title">Klash</h3>
+            <div class="cardInfo">
+              <h5>Ornellaia DOC Superiore Rosso</h5>
+              <h5>12 Km</h5>
+              <h5>330 DKK &emsp; 🕒 145 min</h5>
+
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+
+
+      <!-- Grid -->
+
+      <!-- Footer -->
+      <footer class="footer" style="padding-top:50px ;">
+        <a class="links"><i class="fas fa-home"></i></a>
+        <a class="links"><i class="fas fa-compass"></i></a>
+
+        <a class="links"><i class="fas fa-user"></i></a>
+      </footer>
+
+      <!-- Container description -->
+      <div class="container-description">
+        <!-- Bookmark -->
+        <mark class="mark">
+          <i class="fas fa-shopping-basket"></i>
+        </mark>
+        <!--     Header -->
+        <div class="-withsub">
+          <h1 class="title">Klash</h1>
+          <span class="sub">Ornellaia DOC Superiore Rosso</span>
+        </div>
+        <!--     Description -->
+        <div class="description">
+
+          <div style="color: black;" class="">
+            <h5>Italy / Toscana / 2017 / Redwine</h5>
+            <h5>12 Km</h5>
+            <h5>330 DKK &emsp; 🕒 145 min</h5>
+
+          </div>
+        </div>
+        <!-- Grid -->
+        <div class="grid-card -details">
+          <figure class="grid">
+            <img src="js/res1.jpg" alt="" class="image">
+          </figure>
+          <figure class="grid">
+            <img src="js/res2.jpg" alt="" class="image">
+          </figure>
+          <figure class="grid">
+            <img src="js/res3.jpg" alt="" class="image">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <a class="scrollBut" href="#section04"><span></span></a>
+
+  </section>
+
+
+
+
+
+
+
+  <section id="section04" class="demo">
+    <h1 class="projecth1">customers</h1>
+    <div class="wrapper" data-aos="fade-up" data-aos-duration="1500">
+
+      <div class="card card--19">
+        <div class="card__header card__header--19">
+          <div class="card__watermark" data-watermark=""></div>
+
+          <img src="js/flowerhLogo.svg" alt="Nike" class="card__logo card__will-animate">
+          <h1 style="font-size: 35px; margin-top: 20px !important;" class="card__title card__will-animate">flowerhaus.
+          </h1>
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">CMS & custom scripts</h1>
+          <span class="card__subtitle card__will-animate">We work with flowerhaus, creating custom scripts and
+            solutions, mainly for CMS systems, such as WordPress.</span>
+
+        </div>
+
+        <div class="card__body">
+          <div class="card__wish-list card__wish-list--19 card__will-animate">VISIT THEM HERE</div>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+
+      <!-- Nike Solstice -->
+      <div class="card card--solstice">
+        <div class="card__header card__header--solstice">
+          <div class="card__watermark" data-watermark=""></div>
+          <img src="js/warphand.svg" alt="Nike" class="card__logo card__will-animate">
+          <h1 style="font-size: 35px; margin-top: 20px !important;" class="card__title card__will-animate">WARP
+            Consulting</h1>
+          <span class="card__price card__will-animate"></span>
+
+          <h1 style="margin-top: 25px !important;" class="card__title card__will-animate">trading algorithms and market
+            screeners</h1>
+          <span class="card__subtitle card__will-animate">We worked on optimizing trading algorithms and market
+            screeners.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="" alt="" class="card__image card__will-animate">
+          <div class="card__wish-list card__wish-list--solstice card__will-animate">VISIT THEM HERE</div>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+
+      <!-- Nike Huarache -->
+      <div class="card card--huarache">
+        <div class="card__header card__header--huarache">
+          <div class="card__watermark" data-watermark=""></div>
+
+          <img src="" alt="" class="card__logo card__will-animate">
+          <h1 style="font-size: 35px; margin-top: 20px !important;" class="card__title card__will-animate">MØLHOLM PRINT
+            & TEKSTILTRYK</h1>
+          <span class="card__price card__will-animate"></span>
+
+          <h1 style="margin-top: 25px !important;" class="card__title card__will-animate">CMS & custom scripts</h1>
+          <span class="card__subtitle card__will-animate">We work with molholm, creating custom scripts and solutions,
+            mainly for CMS systems, such as Shopify</span>
+          <span class="card__price card__will-animate"></span>
+
+
+
+        </div>
+
+        <div class="card__body">
+          <img src="" alt="" class="card__image card__will-animate">
+          <div class="card__wish-list card__wish-list--solstice card__will-animate">VISIT THEM HERE</div>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+      <!-- Nike Huarache -->
+      <div class="card card--ap">
+        <div class="card__header card__header--ap">
+          <div class="card__watermark" data-watermark=""></div>
+
+          <img src="js/apLogo.png" alt="" class="card__logo card__will-animate">
+          <h1 style="font-size: 35px; margin-top: 20px !important;" class="card__title card__will-animate">ARCTICPUFFIN
+          </h1>
+          <span class="card__price card__will-animate"></span>
+
+          <h1 style="margin-top: 25px !important;" class="card__title card__will-animate">IT responsible & design</h1>
+          <span class="card__subtitle card__will-animate">We have worked on designing, programming and brand-development
+            for Arctic Puffin</span>
+          <span class="card__price card__will-animate"></span>
+
+
+
+        </div>
+
+        <div class="card__body">
+          <img src="" alt="" class="card__image card__will-animate">
+          <div class="card__wish-list card__wish-list--solstice card__will-animate">VISIT THEM HERE</div>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+    </div> <!-- /wrapper -->
+
+
+
+    <a class="scrollBut" href="#section05"><span></span></a>
+  </section>
+
+
+
+
+
+
+
+  <section id="section05" class="demo">
+    <!-- begin section -->
+    <h1 class="contact">contact us</h1>
+    <div data-aos="fade-up" data-aos-duration="1000" class="contactForm" data-anchor="contact">
+      <div class="content wow fadeInDown" data-wow-delay="0.2s">
+
+        <br>
+        <p>If you are interested in working with us or have any questions, please send us a email at skj@kolbytes.com
+        </p>
+        <br>
+        <!-- -->
+        <div class="contact-form">
+
+          <div id="form-messages"></div>
+          <form id="ajax-contact" method="post" role="form" action="mail.php" data-toggle="validator">
+            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
+              <input type="text" class="form-control" id="name" name="name" placeholder="name"
+                data-error="Field can't be blank!" required>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
+              <input type="email" class="form-control" id="email" name="email" placeholder="email"
+                data-error="Field can't be blank!" required>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
+              <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="message"
+                data-error="Minimum of 10 characters" required></textarea>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <a type="submit" name="submit" class="but">send message</a>
+
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+    <div class="footerMain">
+      <p>Kolbytes<br>
+        CVR: 41428465<br>
+        Address: Vievang Alle 32, 2610, Rødovre, Denmark<br>
+        Email: skj@kolbytes.com</p>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+    </div>
+    <a class="goToB" href="#section01">go to the begining</a>
+    <a class="copyrights">Copyright © 2020 Kolbyes. All rights reserved.</a>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- <script src="/cards.js"></script>-->
+  <script src="js/appmobile.js"></script>
+  <script src="js/contact.js"></script>
+  <link rel="stylesheet/less" type="text/css" href="js/styles.less" />
+  <script src="//cdn.jsdelivr.net/npm/less"></script>
+</body>
+
+</html>
